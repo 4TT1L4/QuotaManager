@@ -1,0 +1,923 @@
+{
+	"id": "8ff95a35-4eae-47f2-b208-92b2d421e1cf",
+	"name": "QuotaManager",
+	"allTests": [],
+	"timestamp": "2020-01-14T20:15:58.507Z",
+	"collection_id": "0b81446e-1127-4c40-a1dc-a5cf314436c7",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "259e0821-1d31-4315-aa20-57056a856f40",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "0b81446e-1127-4c40-a1dc-a5cf314436c7",
+		"name": "QuotaManager",
+		"order": [
+			"f1c2d9fb-a3fd-4d28-8b02-8f883f577e8e",
+			"87b422b4-b206-445b-8f46-b5ee1a095dfd",
+			"63d8bc65-abd9-4fce-a499-dd0139255cd0",
+			"549c1a8e-9483-41a0-aaae-08f50e32900f",
+			"f3ae5955-d365-4502-ba47-9f1a08d2965b",
+			"01458e10-f8a1-4994-97bf-ea25d67476ec",
+			"a114e725-5841-49d2-a48a-783ca77ea9c4",
+			"9d1cc9c3-0c00-4895-8538-39999798ad92",
+			"37dbcc07-b91a-4e1d-8204-4095b40a9709",
+			"bfe61806-1d81-4668-95cf-124e872bd2d7",
+			"34d52368-6faf-462b-90bf-222e53d5fb66",
+			"923e6ef9-84b1-4cef-9d2f-3382104d0af2",
+			"2f5750bc-1e32-47a7-a7dd-66766ac420c9",
+			"6772cfbb-49a9-4d85-a536-27ce7704c876",
+			"014f39f3-34c5-4bee-afea-2b7a9815b4cc",
+			"dbdbdd32-b6a6-44b5-a9a7-a8725b01ce98"
+		],
+		"folders_order": [],
+		"isFavorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": null,
+	"results": [
+		{
+			"name": "REGULAR_USER GET usage/",
+			"id": "f1c2d9fb-a3fd-4d28-8b02-8f883f577e8e",
+			"url": "http://quotamanager.cfapps.io:80/usage/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is 200": true
+			},
+			"testPassFailCounts": {
+				"response is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"211"
+			],
+			"allTests": [
+				{
+					"response is 200": true
+				}
+			],
+			"time": "211",
+			"totalRequestTime": "211",
+			"iterationResults": {}
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload",
+			"id": "87b422b4-b206-445b-8f46-b5ee1a095dfd",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"response is 204": true
+			},
+			"testPassFailCounts": {
+				"response is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"202"
+			],
+			"allTests": [
+				{
+					"response is 204": true
+				}
+			],
+			"time": "202",
+			"totalRequestTime": "202",
+			"iterationResults": {}
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload PHOTO OK",
+			"id": "63d8bc65-abd9-4fce-a499-dd0139255cd0",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"response is 204": true
+			},
+			"testPassFailCounts": {
+				"response is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"260"
+			],
+			"allTests": [
+				{
+					"response is 204": true
+				}
+			],
+			"time": "260",
+			"totalRequestTime": "260",
+			"iterationResults": {}
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload FILEOK",
+			"id": "549c1a8e-9483-41a0-aaae-08f50e32900f",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"response is 204": true
+			},
+			"testPassFailCounts": {
+				"response is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"237"
+			],
+			"allTests": [
+				{
+					"response is 204": true
+				}
+			],
+			"time": "237",
+			"totalRequestTime": "237",
+			"iterationResults": {}
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload PHOTO QUOTA_EXCEEDED",
+			"id": "f3ae5955-d365-4502-ba47-9f1a08d2965b",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 507,
+				"name": "Insufficient Storage",
+				"detail": {
+					"name": "Insufficient Storage (WebDAV) (RFC 4918)",
+					"detail": "The server is unable to store the representation needed to complete the request."
+				}
+			},
+			"tests": {
+				"response is 507": true
+			},
+			"testPassFailCounts": {
+				"response is 507": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"231"
+			],
+			"allTests": [
+				{
+					"response is 507": true
+				}
+			],
+			"time": "231",
+			"totalRequestTime": "231",
+			"iterationResults": {}
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload FILE QUOTA_EXCEEDED ",
+			"id": "01458e10-f8a1-4994-97bf-ea25d67476ec",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 507,
+				"name": "Insufficient Storage",
+				"detail": {
+					"name": "Insufficient Storage (WebDAV) (RFC 4918)",
+					"detail": "The server is unable to store the representation needed to complete the request."
+				}
+			},
+			"tests": {
+				"response is 507": true
+			},
+			"testPassFailCounts": {
+				"response is 507": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"231"
+			],
+			"allTests": [
+				{
+					"response is 507": true
+				}
+			],
+			"time": "231",
+			"totalRequestTime": "231",
+			"iterationResults": {}
+		},
+		{
+			"name": "REGULAR_USER POST setSubscription/",
+			"id": "a114e725-5841-49d2-a48a-783ca77ea9c4",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"response is 403": true
+			},
+			"testPassFailCounts": {
+				"response is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"233"
+			],
+			"allTests": [
+				{
+					"response is 403": true
+				}
+			],
+			"time": "233",
+			"totalRequestTime": "233",
+			"iterationResults": {}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT GET usage/",
+			"id": "9d1cc9c3-0c00-4895-8538-39999798ad92",
+			"url": "http://quotamanager.cfapps.io:80/usage/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"response is 403": true
+			},
+			"testPassFailCounts": {
+				"response is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"232"
+			],
+			"allTests": [
+				{
+					"response is 403": true
+				}
+			],
+			"time": "232",
+			"totalRequestTime": "232",
+			"iterationResults": {}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /checkUpload",
+			"id": "37dbcc07-b91a-4e1d-8204-4095b40a9709",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"tests": {
+				"response is 403": true
+			},
+			"testPassFailCounts": {
+				"response is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"186"
+			],
+			"allTests": [
+				{
+					"response is 403": true
+				}
+			],
+			"time": "186",
+			"totalRequestTime": "186",
+			"iterationResults": {}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription",
+			"id": "bfe61806-1d81-4668-95cf-124e872bd2d7",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"response is 204": true
+			},
+			"testPassFailCounts": {
+				"response is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"100"
+			],
+			"allTests": [
+				{
+					"response is 204": true
+				}
+			],
+			"time": "100",
+			"totalRequestTime": "100",
+			"iterationResults": {}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Invalid Subscription",
+			"id": "34d52368-6faf-462b-90bf-222e53d5fb66",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"response is 400": true,
+				"should contain error message": true
+			},
+			"testPassFailCounts": {
+				"response is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"should contain error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"102"
+			],
+			"allTests": [
+				{
+					"response is 400": true,
+					"should contain error message": true
+				}
+			],
+			"time": "102",
+			"totalRequestTime": "102",
+			"iterationResults": {}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Missing Subscription",
+			"id": "923e6ef9-84b1-4cef-9d2f-3382104d0af2",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"response is 400": true
+			},
+			"testPassFailCounts": {
+				"response is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"97"
+			],
+			"allTests": [
+				{
+					"response is 400": true
+				}
+			],
+			"time": "97",
+			"totalRequestTime": "97",
+			"iterationResults": {}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Invalid userId",
+			"id": "2f5750bc-1e32-47a7-a7dd-66766ac420c9",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"response is 400": true
+			},
+			"testPassFailCounts": {
+				"response is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"98"
+			],
+			"allTests": [
+				{
+					"response is 400": true
+				}
+			],
+			"time": "98",
+			"totalRequestTime": "98",
+			"iterationResults": {}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Missing userId",
+			"id": "6772cfbb-49a9-4d85-a536-27ce7704c876",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"tests": {
+				"response is 400": true
+			},
+			"testPassFailCounts": {
+				"response is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"98"
+			],
+			"allTests": [
+				{
+					"response is 400": true
+				}
+			],
+			"time": "98",
+			"totalRequestTime": "98",
+			"iterationResults": {}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription to PRO",
+			"id": "014f39f3-34c5-4bee-afea-2b7a9815b4cc",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"tests": {
+				"response is 204": true
+			},
+			"testPassFailCounts": {
+				"response is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"106"
+			],
+			"allTests": [
+				{
+					"response is 204": true
+				}
+			],
+			"time": "106",
+			"totalRequestTime": "106",
+			"iterationResults": {}
+		},
+		{
+			"name": "REGULAR_USER GET usage/ Copy",
+			"id": "dbdbdd32-b6a6-44b5-a9a7-a8725b01ce98",
+			"url": "http://quotamanager.cfapps.io:80/usage/",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"response is 200": true
+			},
+			"testPassFailCounts": {
+				"response is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"307"
+			],
+			"allTests": [
+				{
+					"response is 200": true
+				}
+			],
+			"time": "307",
+			"totalRequestTime": "307",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 17,
+	"totalFail": 0,
+	"totalTime": 2931,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "REGULAR_USER GET usage/",
+			"id": "f1c2d9fb-a3fd-4d28-8b02-8f883f577e8e",
+			"url": "http://quotamanager.cfapps.io:80/usage/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload",
+			"id": "87b422b4-b206-445b-8f46-b5ee1a095dfd",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload PHOTO OK",
+			"id": "63d8bc65-abd9-4fce-a499-dd0139255cd0",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload FILEOK",
+			"id": "549c1a8e-9483-41a0-aaae-08f50e32900f",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload PHOTO QUOTA_EXCEEDED",
+			"id": "f3ae5955-d365-4502-ba47-9f1a08d2965b",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 507,
+				"name": "Insufficient Storage",
+				"detail": {
+					"name": "Insufficient Storage (WebDAV) (RFC 4918)",
+					"detail": "The server is unable to store the representation needed to complete the request."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 507": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload FILE QUOTA_EXCEEDED ",
+			"id": "01458e10-f8a1-4994-97bf-ea25d67476ec",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 507,
+				"name": "Insufficient Storage",
+				"detail": {
+					"name": "Insufficient Storage (WebDAV) (RFC 4918)",
+					"detail": "The server is unable to store the representation needed to complete the request."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 507": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "REGULAR_USER POST setSubscription/",
+			"id": "a114e725-5841-49d2-a48a-783ca77ea9c4",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT GET usage/",
+			"id": "9d1cc9c3-0c00-4895-8538-39999798ad92",
+			"url": "http://quotamanager.cfapps.io:80/usage/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /checkUpload",
+			"id": "37dbcc07-b91a-4e1d-8204-4095b40a9709",
+			"url": "http://quotamanager.cfapps.io:80/checkUpload/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden",
+				"detail": {
+					"name": "Forbidden",
+					"detail": "The request was a legal request, but the server is refusing to respond to it. Unlike a 401 Unauthorized response, authenticating will make no difference."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription",
+			"id": "bfe61806-1d81-4668-95cf-124e872bd2d7",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Invalid Subscription",
+			"id": "34d52368-6faf-462b-90bf-222e53d5fb66",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"should contain error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Missing Subscription",
+			"id": "923e6ef9-84b1-4cef-9d2f-3382104d0af2",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Invalid userId",
+			"id": "2f5750bc-1e32-47a7-a7dd-66766ac420c9",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Missing userId",
+			"id": "6772cfbb-49a9-4d85-a536-27ce7704c876",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request",
+				"detail": {
+					"name": "Bad Request",
+					"detail": "The request cannot be fulfilled due to bad syntax."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription to PRO",
+			"id": "014f39f3-34c5-4bee-afea-2b7a9815b4cc",
+			"url": "http://quotamanager.cfapps.io:80/setSubscription/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 204,
+				"name": "No Content",
+				"detail": {
+					"name": "No Content",
+					"detail": "The server successfully processed the request, but is not returning any content."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "REGULAR_USER GET usage/ Copy",
+			"id": "dbdbdd32-b6a6-44b5-a9a7-a8725b01ce98",
+			"url": "http://quotamanager.cfapps.io:80/usage/",
+			"time": "2020-01-14T20:15:58.507Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"response is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

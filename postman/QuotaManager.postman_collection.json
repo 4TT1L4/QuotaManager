@@ -1,0 +1,1043 @@
+{
+	"info": {
+		"_postman_id": "0b81446e-1127-4c40-a1dc-a5cf314436c7",
+		"name": "QuotaManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "REGULAR_USER GET usage/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "148cc5be-990d-4669-bd38-ab2c9b050fc4",
+						"exec": [
+							"pm.test(\"response is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb100",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{server}}:{{port}}/usage/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"usage",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "58f8e8cd-a661-4461-886b-e24c3d97e537",
+						"exec": [
+							"pm.test(\"response is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb100",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Bujak/Desktop/api-led-connectivity.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/checkUpload/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"checkUpload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload PHOTO OK",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "58f8e8cd-a661-4461-886b-e24c3d97e537",
+						"exec": [
+							"pm.test(\"response is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb105",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "photo.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/checkUpload/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"checkUpload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload FILEOK",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "58f8e8cd-a661-4461-886b-e24c3d97e537",
+						"exec": [
+							"pm.test(\"response is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb105",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "photo.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/checkUpload/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"checkUpload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload PHOTO QUOTA_EXCEEDED",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "58f8e8cd-a661-4461-886b-e24c3d97e537",
+						"exec": [
+							"pm.test(\"response is 507\", function () {\r",
+							"    pm.response.to.have.status(507);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb104",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Bujak/Desktop/api-led-connectivity.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/checkUpload/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"checkUpload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGULAR_USER POST /checkUpload FILE QUOTA_EXCEEDED ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "58f8e8cd-a661-4461-886b-e24c3d97e537",
+						"exec": [
+							"pm.test(\"response is 507\", function () {\r",
+							"    pm.response.to.have.status(507);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb105",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "test.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/checkUpload/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"checkUpload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGULAR_USER POST setSubscription/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2518ad83-e1df-4e81-bb8c-768ea38f9f0f",
+						"exec": [
+							"pm.test(\"response is 403\", function () {\r",
+							"    pm.response.to.have.status(403);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb100",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"UserId\" : \"5e15cbcfef537d543edeb100\", \"Subscription\" : \"PRO\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/setSubscription/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"setSubscription",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUSTOMER_SUPPORT GET usage/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "de074bf1-f53e-4a08-9134-0f3dec03ab8f",
+						"exec": [
+							"pm.test(\"response is 403\", function () {\r",
+							"    pm.response.to.have.status(403);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb103",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://{{server}}:{{port}}/usage/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"usage",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /checkUpload",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "58f8e8cd-a661-4461-886b-e24c3d97e537",
+						"exec": [
+							"pm.test(\"response is 403\", function () {\r",
+							"    pm.response.to.have.status(403);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb103",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Bujak/Desktop/api-led-connectivity.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/checkUpload/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"checkUpload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "80d2646d-e47d-4c67-b0d7-e295be17a272",
+						"exec": [
+							"pm.test(\"response is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb103",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"UserId\" : \"5e15cbcfef537d543edeb100\", \"Subscription\" : \"LIGHT\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/setSubscription/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"setSubscription",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Invalid Subscription",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "017a79c1-df78-4ff1-bda9-e2033b6587d2",
+						"exec": [
+							"pm.test(\"response is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"should contain error message\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"INVALID_SUBSCRIPTION_TYPE\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb103",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"UserId\" : \"5e15cbcfef537d543edeb100\", \"Subscription\" : \"INVALID\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/setSubscription/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"setSubscription",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Missing Subscription",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3755fdb6-42a3-4551-98e4-15f7dea51bdf",
+						"exec": [
+							"pm.test(\"response is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb103",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"UserId\" : \"5e15cbcfef537d543edeb100\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/setSubscription/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"setSubscription",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Invalid userId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "06446374-0935-4f71-baab-c1b098dac22e",
+						"exec": [
+							"pm.test(\"response is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb103",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"UserId\" : \"INVALID\", \"Subscription\" : \"LIGHT\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/setSubscription/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"setSubscription",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription - Missing userId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "69abad68-8135-4b2e-af60-e97a7a48d2ac",
+						"exec": [
+							"pm.test(\"response is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb103",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"Subscription\" : \"PRO\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/setSubscription/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"setSubscription",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CUSTOMER_SUPPORT POST /setSubscription to PRO",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "80d2646d-e47d-4c67-b0d7-e295be17a272",
+						"exec": [
+							"pm.test(\"response is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb103",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"UserId\" : \"5e15cbcfef537d543edeb102\", \"Subscription\" : \"PRO\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{server}}:{{port}}/setSubscription/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"setSubscription",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGULAR_USER GET usage/ Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "148cc5be-990d-4669-bd38-ab2c9b050fc4",
+						"exec": [
+							"pm.test(\"response is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "5e15cbcfef537d543edeb102",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{server}}:{{port}}/usage/",
+					"protocol": "http",
+					"host": [
+						"{{server}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"usage",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,8 @@
+---
+applications:
+- name: quotamanager
+  memory: 768M
+  random-route: true
+  path: build/libs/quotamanager-0.0.1-SNAPSHOT.jar
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
